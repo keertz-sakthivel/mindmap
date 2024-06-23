@@ -1,1 +1,40 @@
-console.log("hii")
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindmap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <h1>Mindmap</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>Wings of Fire</h2>
+            <h5>Dr.APJ Abdul Kalam</h5>
+            <p>The moral of "Wings of Fire" by A.P.J. Abdul Kalam is about perseverance, dreaming big, overcoming adversity, valuing education, teamwork, leadership, and maintaining humility and integrity. It inspires readers to work hard, stay determined, and contribute to</p>
+            <button onclick="deleteitem(event)">Delete</button>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="popupbox">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text"placeholder="Book Title" id="book-title-input">
+            <input type="text"placeholder="Book Author" id="book-author-input"><br>
+            <textarea placeholder="Short Description" id="book-description-input"></textarea>
+            <button id="add-book">ADD</button>
+            <button id="cancel-popup">CANCEL</button>
+        </form>
+        
+    </div>
+    <button  class="add-button" id="add-popup-button">+</button>  
+
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
